@@ -15,7 +15,7 @@ Springboot REST api boilerplate (template) application with the following config
 * provider/FilePropertyProvider - An implementation for a file based property provider where the application can use configuration/property files to do the application configuration.
 * PropertyConfig.java - Injects the application property providers in the runtime based on the environment. 
 * swagger/SwaggerConfig.java - For swagger configurations. 
-* datasource/DataSourceConfig.java = For datasource configurations.
+* datasource/DataSourceConfig.java = For datasource configurations. Default configuration is MySql
 
 ### Constants (constant package)
 All the application constants and definitions goes here. 
@@ -41,4 +41,4 @@ All the repositories goes here.
 All the custom exceptions goes here. 
 
 * ApiErrorResponse.java - A common response entity to return the errors to the end user. 
-* ApiExceptionHandler.java - The common exception handler. 
+* ApiExceptionHandler.java - The common exception handler.
