@@ -17,7 +17,7 @@ public class SampleController{
     @Operation(summary = "Create a new example entity.")
     @PostMapping("/example")
     @ResponseStatus(HttpStatus.CREATED)
-    public SampleEntity createEntity(SampleEntity sampleEntity) throws ApiException {
+    public SampleEntity createEntity(@RequestBody SampleEntity sampleEntity) throws ApiException {
         return sampleService.registerDevice(sampleEntity);
     }
 }
